@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2151A71AC5D38B00EA35F3 /* DownloadPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2151A61AC5D38B00EA35F3 /* DownloadPictureViewController.m */; };
+		1F4025C81ABD033700F81DF7 /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4025C71ABD033600F81DF7 /* CategoryTableViewController.m */; };
+		1FEDC5CD1AC8A8A200DAC3A7 /* GroupMeetingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEDC5CA1AC8A8A200DAC3A7 /* GroupMeetingsViewController.m */; };
+		1FEDC5CE1AC8A8A200DAC3A7 /* ScheduleMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEDC5CC1AC8A8A200DAC3A7 /* ScheduleMeetingViewController.m */; };
+		6B148F391AC7261A00E35931 /* ClosestGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B148F381AC7261900E35931 /* ClosestGroupsViewController.m */; };
+		6BA54B971AAFDB7D00B331AD /* TeamForYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA54B961AAFDB7D00B331AD /* TeamForYouViewController.m */; };
+		7C273C331AC782070056DC6E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C273C2D1AC782070056DC6E /* Bolts.framework */; };
+		7C273C341AC782070056DC6E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C273C2E1AC782070056DC6E /* Parse.framework */; };
+		7C273C351AC782070056DC6E /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C273C2F1AC782070056DC6E /* ParseCrashReporting.framework */; };
+		7C273C361AC782070056DC6E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C273C301AC782070056DC6E /* ParseFacebookUtils.framework */; };
+		7C273C371AC782070056DC6E /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C273C311AC782070056DC6E /* ParseFacebookUtilsV4.framework */; };
+		7C273C381AC782070056DC6E /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C273C321AC782070056DC6E /* ParseUI.framework */; };
 		7C2F79871A85A428007F1CCA /* MyGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F79861A85A428007F1CCA /* MyGroupViewController.m */; };
 		7C2F798A1A85AC2F007F1CCA /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F79891A85AC2F007F1CCA /* UserViewController.m */; };
 		7C2F798D1A85D6BD007F1CCA /* CategoryGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F798C1A85D6BD007F1CCA /* CategoryGroupViewController.m */; };
 		7C2F79931A8812BE007F1CCA /* EditGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F79921A8812BE007F1CCA /* EditGroupViewController.m */; };
 		7C3ABE0C1A7A26880069D53D /* NewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3ABE0B1A7A26880069D53D /* NewUserViewController.m */; };
-		7C418AB11A803B0800219F6A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C418AAC1A803B0800219F6A /* Parse.framework */; };
-		7C418AB21A803B0800219F6A /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C418AAD1A803B0800219F6A /* ParseUI.framework */; };
-		7C418AB31A803B0800219F6A /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C418AAE1A803B0800219F6A /* ParseCrashReporting.framework */; };
-		7C418AB41A803B0800219F6A /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C418AAF1A803B0800219F6A /* ParseFacebookUtils.framework */; };
-		7C418AB51A803B0800219F6A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C418AB01A803B0800219F6A /* Bolts.framework */; };
 		7C418AB71A803B3300219F6A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C418AB61A803B3300219F6A /* AdSupport.framework */; };
 		7C418AB91A803B3E00219F6A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C418AB81A803B3E00219F6A /* Social.framework */; };
 		7C418ABB1A803B5700219F6A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C418ABA1A803B5700219F6A /* Accounts.framework */; };
@@ -684,6 +691,8 @@
 		7CD9C27A1A814FDB0038196C /* DeleteAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD9C2791A814FDB0038196C /* DeleteAccountViewController.m */; };
 		7CD9C27D1A8150330038196C /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD9C27C1A8150330038196C /* ChangePasswordViewController.m */; };
 		7CD9C2801A81845F0038196C /* SportsPrefTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD9C27F1A81845F0038196C /* SportsPrefTableViewController.m */; };
+		F11A204C1AC3E9A3007C0185 /* AdminPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F11A204B1AC3E9A3007C0185 /* AdminPopupViewController.m */; };
+		F1D58EDC1ABFBCBF00F2EDEB /* MemberTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D58EDB1ABFBCBF00F2EDEB /* MemberTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -697,6 +706,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F2151A51AC5D38B00EA35F3 /* DownloadPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPictureViewController.h; sourceTree = "<group>"; };
+		1F2151A61AC5D38B00EA35F3 /* DownloadPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPictureViewController.m; sourceTree = "<group>"; };
+		1F4025C61ABD033600F81DF7 /* CategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewController.h; sourceTree = "<group>"; };
+		1F4025C71ABD033600F81DF7 /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewController.m; sourceTree = "<group>"; };
+		1FEDC5C91AC8A8A200DAC3A7 /* GroupMeetingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupMeetingsViewController.h; sourceTree = "<group>"; };
+		1FEDC5CA1AC8A8A200DAC3A7 /* GroupMeetingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMeetingsViewController.m; sourceTree = "<group>"; };
+		1FEDC5CB1AC8A8A200DAC3A7 /* ScheduleMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleMeetingViewController.h; sourceTree = "<group>"; };
+		1FEDC5CC1AC8A8A200DAC3A7 /* ScheduleMeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleMeetingViewController.m; sourceTree = "<group>"; };
+		6B148F381AC7261900E35931 /* ClosestGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClosestGroupsViewController.m; sourceTree = "<group>"; };
+		6B148F3A1AC7269B00E35931 /* ClosestGroupsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClosestGroupsViewController.h; sourceTree = "<group>"; };
+		6BA54B961AAFDB7D00B331AD /* TeamForYouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamForYouViewController.m; sourceTree = "<group>"; };
+		6BA54B991AAFDC0800B331AD /* TeamForYouViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamForYouViewController.h; sourceTree = "<group>"; };
+		7C273C2D1AC782070056DC6E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7C273C2E1AC782070056DC6E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		7C273C2F1AC782070056DC6E /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		7C273C301AC782070056DC6E /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		7C273C311AC782070056DC6E /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		7C273C321AC782070056DC6E /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		7C2F79851A85A428007F1CCA /* MyGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGroupViewController.h; sourceTree = "<group>"; };
 		7C2F79861A85A428007F1CCA /* MyGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGroupViewController.m; sourceTree = "<group>"; };
 		7C2F79881A85AC2F007F1CCA /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
@@ -707,11 +734,7 @@
 		7C2F79921A8812BE007F1CCA /* EditGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditGroupViewController.m; sourceTree = "<group>"; };
 		7C3ABE0A1A7A26880069D53D /* NewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUserViewController.h; sourceTree = "<group>"; };
 		7C3ABE0B1A7A26880069D53D /* NewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUserViewController.m; sourceTree = "<group>"; };
-		7C418AAC1A803B0800219F6A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		7C418AAD1A803B0800219F6A /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		7C418AAE1A803B0800219F6A /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
-		7C418AAF1A803B0800219F6A /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		7C418AB01A803B0800219F6A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7C3F1E8B1AC796CD00303FE8 /* Team-Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Team-Up.entitlements"; sourceTree = "<group>"; };
 		7C418AB61A803B3300219F6A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		7C418AB81A803B3E00219F6A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		7C418ABA1A803B5700219F6A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -734,8 +757,8 @@
 		7C418AE01A807B8800219F6A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7C507B1D1A844D280039B93E /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		7C507B1E1A844D280039B93E /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
-		7C507B261A845F9B0039B93E /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsTableViewController.h; path = ../SettingsTableViewController.h; sourceTree = "<group>"; };
-		7C507B271A845F9B0039B93E /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsTableViewController.m; path = ../SettingsTableViewController.m; sourceTree = "<group>"; };
+		7C507B261A845F9B0039B93E /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		7C507B271A845F9B0039B93E /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		7C507B291A847F2B0039B93E /* CreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupViewController.h; sourceTree = "<group>"; };
 		7C507B2A1A847F2B0039B93E /* CreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupViewController.m; sourceTree = "<group>"; };
 		7C507B2C1A84A3600039B93E /* CreatedGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatedGroupViewController.h; sourceTree = "<group>"; };
@@ -1415,6 +1438,10 @@
 		7CD9C27C1A8150330038196C /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		7CD9C27E1A81845F0038196C /* SportsPrefTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsPrefTableViewController.h; sourceTree = "<group>"; };
 		7CD9C27F1A81845F0038196C /* SportsPrefTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsPrefTableViewController.m; sourceTree = "<group>"; };
+		F11A204A1AC3E9A3007C0185 /* AdminPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminPopupViewController.h; sourceTree = "<group>"; };
+		F11A204B1AC3E9A3007C0185 /* AdminPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminPopupViewController.m; sourceTree = "<group>"; };
+		F1D58EDA1ABFBCBF00F2EDEB /* MemberTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberTableViewController.h; sourceTree = "<group>"; };
+		F1D58EDB1ABFBCBF00F2EDEB /* MemberTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1423,10 +1450,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C418ADA1A803CA300219F6A /* libz.1.1.3.dylib in Frameworks */,
+				7C273C331AC782070056DC6E /* Bolts.framework in Frameworks */,
 				7C418AD71A803BF700219F6A /* UIKit.framework in Frameworks */,
 				7C418AD51A803BF000219F6A /* SystemConfiguration.framework in Frameworks */,
 				7C418AD31A803BE500219F6A /* StoreKit.framework in Frameworks */,
 				7C418AD11A803BDD00219F6A /* Security.framework in Frameworks */,
+				7C273C381AC782070056DC6E /* ParseUI.framework in Frameworks */,
 				7C418ACF1A803BD400219F6A /* QuartzCore.framework in Frameworks */,
 				7C418ACD1A803BCB00219F6A /* MobileCoreServices.framework in Frameworks */,
 				7C418ACA1A803BC300219F6A /* libsqlite3.0.dylib in Frameworks */,
@@ -1435,16 +1464,15 @@
 				7C418AC51A803B9500219F6A /* Foundation.framework in Frameworks */,
 				7C418AC31A803B8D00219F6A /* CoreLocation.framework in Frameworks */,
 				7C418AC11A803B8100219F6A /* CoreGraphics.framework in Frameworks */,
+				7C273C341AC782070056DC6E /* Parse.framework in Frameworks */,
 				7C418ABF1A803B6900219F6A /* CFNetwork.framework in Frameworks */,
+				7C273C371AC782070056DC6E /* ParseFacebookUtilsV4.framework in Frameworks */,
 				7C418ABD1A803B6100219F6A /* AudioToolbox.framework in Frameworks */,
 				7C418ABB1A803B5700219F6A /* Accounts.framework in Frameworks */,
+				7C273C361AC782070056DC6E /* ParseFacebookUtils.framework in Frameworks */,
 				7C418AB91A803B3E00219F6A /* Social.framework in Frameworks */,
+				7C273C351AC782070056DC6E /* ParseCrashReporting.framework in Frameworks */,
 				7C418AB71A803B3300219F6A /* AdSupport.framework in Frameworks */,
-				7C418AB51A803B0800219F6A /* Bolts.framework in Frameworks */,
-				7C418AB21A803B0800219F6A /* ParseUI.framework in Frameworks */,
-				7C418AB31A803B0800219F6A /* ParseCrashReporting.framework in Frameworks */,
-				7C418AB41A803B0800219F6A /* ParseFacebookUtils.framework in Frameworks */,
-				7C418AB11A803B0800219F6A /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1461,13 +1489,14 @@
 		7C418AAB1A803AF100219F6A /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				7C273C2D1AC782070056DC6E /* Bolts.framework */,
+				7C273C2E1AC782070056DC6E /* Parse.framework */,
+				7C273C2F1AC782070056DC6E /* ParseCrashReporting.framework */,
+				7C273C301AC782070056DC6E /* ParseFacebookUtils.framework */,
+				7C273C311AC782070056DC6E /* ParseFacebookUtilsV4.framework */,
+				7C273C321AC782070056DC6E /* ParseUI.framework */,
 				7C418AC81A803BC300219F6A /* libsqlite3.0.dylib */,
 				7C418AD81A803C0B00219F6A /* System Frameworks */,
-				7C418AAC1A803B0800219F6A /* Parse.framework */,
-				7C418AAD1A803B0800219F6A /* ParseUI.framework */,
-				7C418AAE1A803B0800219F6A /* ParseCrashReporting.framework */,
-				7C418AAF1A803B0800219F6A /* ParseFacebookUtils.framework */,
-				7C418AB01A803B0800219F6A /* Bolts.framework */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -1518,83 +1547,100 @@
 		7C662F601A7335350074FEE9 /* Team-Up */ = {
 			isa = PBXGroup;
 			children = (
-				7C507B2F1A8577FE0039B93E /* Global.h */,
+				1FEDC5C91AC8A8A200DAC3A7 /* GroupMeetingsViewController.h */,
+				1FEDC5CA1AC8A8A200DAC3A7 /* GroupMeetingsViewController.m */,
+				1FEDC5CB1AC8A8A200DAC3A7 /* ScheduleMeetingViewController.h */,
+				1FEDC5CC1AC8A8A200DAC3A7 /* ScheduleMeetingViewController.m */,
+				1F2151A51AC5D38B00EA35F3 /* DownloadPictureViewController.h */,
+				1F2151A61AC5D38B00EA35F3 /* DownloadPictureViewController.m */,
+				7CC7E52F1A81877F001869DE /* 3DSPrefTableViewController.h */,
+				7CC7E5301A81877F001869DE /* 3DSPrefTableViewController.m */,
+				7CD9C2721A80C2930038196C /* 3DSTableViewController.h */,
+				7CD9C2731A80C2930038196C /* 3DSTableViewController.m */,
+				F11A204A1AC3E9A3007C0185 /* AdminPopupViewController.h */,
+				F11A204B1AC3E9A3007C0185 /* AdminPopupViewController.m */,
 				7C662F651A7335350074FEE9 /* AppDelegate.h */,
 				7C662F661A7335350074FEE9 /* AppDelegate.m */,
-				7C662F681A7335350074FEE9 /* ViewController.h */,
-				7C662F691A7335350074FEE9 /* ViewController.m */,
-				7C3ABE0A1A7A26880069D53D /* NewUserViewController.h */,
-				7C3ABE0B1A7A26880069D53D /* NewUserViewController.m */,
-				7CD9C27E1A81845F0038196C /* SportsPrefTableViewController.h */,
-				7CD9C27F1A81845F0038196C /* SportsPrefTableViewController.m */,
-				7C662F6B1A7335350074FEE9 /* Main.storyboard */,
-				7C69AF921A95B3ED003CA3AC /* MessageComposerView.h */,
-				7C69AF931A95B3ED003CA3AC /* MessageComposerView.m */,
+				7C2F798B1A85D6BD007F1CCA /* CategoryGroupViewController.h */,
+				7C2F798C1A85D6BD007F1CCA /* CategoryGroupViewController.m */,
+				1F4025C61ABD033600F81DF7 /* CategoryTableViewController.h */,
+				1F4025C71ABD033600F81DF7 /* CategoryTableViewController.m */,
+				7CD9C27B1A8150330038196C /* ChangePasswordViewController.h */,
+				7CD9C27C1A8150330038196C /* ChangePasswordViewController.m */,
 				7C69AF8C1A95AF62003CA3AC /* ChatGroupsTableViewController.h */,
 				7C69AF8D1A95AF62003CA3AC /* ChatGroupsTableViewController.m */,
 				7C69AF8F1A95B3D0003CA3AC /* ChatViewController.h */,
 				7C69AF901A95B3D0003CA3AC /* ChatViewController.m */,
-				7C2F79911A8812BE007F1CCA /* EditGroupViewController.h */,
-				7C2F79921A8812BE007F1CCA /* EditGroupViewController.m */,
-				7C2F798B1A85D6BD007F1CCA /* CategoryGroupViewController.h */,
-				7C2F798C1A85D6BD007F1CCA /* CategoryGroupViewController.m */,
-				7C2F79881A85AC2F007F1CCA /* UserViewController.h */,
-				7C2F79891A85AC2F007F1CCA /* UserViewController.m */,
-				7C2F79851A85A428007F1CCA /* MyGroupViewController.h */,
-				7C2F79861A85A428007F1CCA /* MyGroupViewController.m */,
+				6B148F3A1AC7269B00E35931 /* ClosestGroupsViewController.h */,
+				6B148F381AC7261900E35931 /* ClosestGroupsViewController.m */,
 				7C507B2C1A84A3600039B93E /* CreatedGroupViewController.h */,
 				7C507B2D1A84A3600039B93E /* CreatedGroupViewController.m */,
 				7C507B291A847F2B0039B93E /* CreateGroupViewController.h */,
 				7C507B2A1A847F2B0039B93E /* CreateGroupViewController.m */,
-				7C507B261A845F9B0039B93E /* SettingsTableViewController.h */,
-				7C507B271A845F9B0039B93E /* SettingsTableViewController.m */,
-				7C507B1D1A844D280039B93E /* ForgotPasswordViewController.h */,
-				7C507B1E1A844D280039B93E /* ForgotPasswordViewController.m */,
-				7CC7E53A1A8218FA001869DE /* ViewProfileViewController.h */,
-				7CC7E53B1A8218FA001869DE /* ViewProfileViewController.m */,
-				7CC7E5341A81C281001869DE /* ProfileViewController.h */,
-				7CC7E5351A81C281001869DE /* ProfileViewController.m */,
-				7CC7E5471A834A60001869DE /* PrefTableViewController.h */,
-				7CC7E5481A834A60001869DE /* PrefTableViewController.m */,
-				7CC7E51D1A818739001869DE /* PCPrefTableViewController.h */,
-				7CC7E51E1A818739001869DE /* PCPrefTableViewController.m */,
-				7CC7E5201A818746001869DE /* PS4PrefTableViewController.h */,
-				7CC7E5211A818746001869DE /* PS4PrefTableViewController.m */,
-				7CC7E5231A81874F001869DE /* PS3PrefTableViewController.h */,
-				7CC7E5241A81874F001869DE /* PS3PrefTableViewController.m */,
-				7CC7E5261A818759001869DE /* Xbox360PrefTableViewController.h */,
-				7CC7E5271A818759001869DE /* Xbox360PrefTableViewController.m */,
-				7CC7E5291A818766001869DE /* XboxOnePrefTableViewController.h */,
-				7CC7E52A1A818766001869DE /* XboxOnePrefTableViewController.m */,
-				7CC7E52C1A818775001869DE /* WiiUPrefTableViewController.h */,
-				7CC7E52D1A818775001869DE /* WiiUPrefTableViewController.m */,
-				7CC7E52F1A81877F001869DE /* 3DSPrefTableViewController.h */,
-				7CC7E5301A81877F001869DE /* 3DSPrefTableViewController.m */,
-				7CD9C27B1A8150330038196C /* ChangePasswordViewController.h */,
-				7CD9C27C1A8150330038196C /* ChangePasswordViewController.m */,
 				7CD9C2781A814FDB0038196C /* DeleteAccountViewController.h */,
 				7CD9C2791A814FDB0038196C /* DeleteAccountViewController.m */,
-				7CD9C2751A80C6850038196C /* SportsTableViewController.h */,
-				7CD9C2761A80C6850038196C /* SportsTableViewController.m */,
-				7CD9C2631A80C2480038196C /* PS3TableViewController.h */,
-				7CD9C2641A80C2480038196C /* PS3TableViewController.m */,
-				7CD9C2661A80C2540038196C /* PS4TableViewController.h */,
-				7CD9C2671A80C2540038196C /* PS4TableViewController.m */,
-				7CD9C2691A80C2670038196C /* Xbox360TableViewController.h */,
-				7CD9C26A1A80C2670038196C /* Xbox360TableViewController.m */,
-				7CD9C26C1A80C2700038196C /* XboxOneTableViewController.h */,
-				7CD9C26D1A80C2700038196C /* XboxOneTableViewController.m */,
-				7CD9C26F1A80C2780038196C /* WiiUTableViewController.h */,
-				7CD9C2701A80C2780038196C /* WiiUTableViewController.m */,
-				7CD9C2721A80C2930038196C /* 3DSTableViewController.h */,
-				7CD9C2731A80C2930038196C /* 3DSTableViewController.m */,
-				7CD9C2601A80BF560038196C /* PCTableViewController.h */,
-				7CD9C2611A80BF560038196C /* PCTableViewController.m */,
-				7C418ADF1A807B8800219F6A /* LoginViewController.h */,
-				7C418AE01A807B8800219F6A /* LoginViewController.m */,
+				7C2F79911A8812BE007F1CCA /* EditGroupViewController.h */,
+				7C2F79921A8812BE007F1CCA /* EditGroupViewController.m */,
+				7C507B1D1A844D280039B93E /* ForgotPasswordViewController.h */,
+				7C507B1E1A844D280039B93E /* ForgotPasswordViewController.m */,
+				7C507B2F1A8577FE0039B93E /* Global.h */,
 				7C662F6E1A7335350074FEE9 /* Images.xcassets */,
 				7C662F701A7335350074FEE9 /* LaunchScreen.xib */,
+				7C418ADF1A807B8800219F6A /* LoginViewController.h */,
+				7C418AE01A807B8800219F6A /* LoginViewController.m */,
+				7C662F6B1A7335350074FEE9 /* Main.storyboard */,
+				F1D58EDA1ABFBCBF00F2EDEB /* MemberTableViewController.h */,
+				F1D58EDB1ABFBCBF00F2EDEB /* MemberTableViewController.m */,
+				7C69AF921A95B3ED003CA3AC /* MessageComposerView.h */,
+				7C69AF931A95B3ED003CA3AC /* MessageComposerView.m */,
+				7C2F79851A85A428007F1CCA /* MyGroupViewController.h */,
+				7C2F79861A85A428007F1CCA /* MyGroupViewController.m */,
+				7C3ABE0A1A7A26880069D53D /* NewUserViewController.h */,
+				7C3ABE0B1A7A26880069D53D /* NewUserViewController.m */,
+				7CC7E51D1A818739001869DE /* PCPrefTableViewController.h */,
+				7CC7E51E1A818739001869DE /* PCPrefTableViewController.m */,
+				7CD9C2601A80BF560038196C /* PCTableViewController.h */,
+				7CD9C2611A80BF560038196C /* PCTableViewController.m */,
+				7CC7E5471A834A60001869DE /* PrefTableViewController.h */,
+				7CC7E5481A834A60001869DE /* PrefTableViewController.m */,
+				7CC7E5341A81C281001869DE /* ProfileViewController.h */,
+				7CC7E5351A81C281001869DE /* ProfileViewController.m */,
+				7CC7E5231A81874F001869DE /* PS3PrefTableViewController.h */,
+				7CC7E5241A81874F001869DE /* PS3PrefTableViewController.m */,
+				7CD9C2631A80C2480038196C /* PS3TableViewController.h */,
+				7CD9C2641A80C2480038196C /* PS3TableViewController.m */,
+				7CC7E5201A818746001869DE /* PS4PrefTableViewController.h */,
+				7CC7E5211A818746001869DE /* PS4PrefTableViewController.m */,
+				7CD9C2661A80C2540038196C /* PS4TableViewController.h */,
+				7CD9C2671A80C2540038196C /* PS4TableViewController.m */,
+				7C507B261A845F9B0039B93E /* SettingsTableViewController.h */,
+				7C507B271A845F9B0039B93E /* SettingsTableViewController.m */,
+				7CD9C27E1A81845F0038196C /* SportsPrefTableViewController.h */,
+				7CD9C27F1A81845F0038196C /* SportsPrefTableViewController.m */,
+				7CD9C2751A80C6850038196C /* SportsTableViewController.h */,
+				7CD9C2761A80C6850038196C /* SportsTableViewController.m */,
 				7C662F611A7335350074FEE9 /* Supporting Files */,
+				7C3F1E8B1AC796CD00303FE8 /* Team-Up.entitlements */,
+				6BA54B991AAFDC0800B331AD /* TeamForYouViewController.h */,
+				6BA54B961AAFDB7D00B331AD /* TeamForYouViewController.m */,
+				7C2F79881A85AC2F007F1CCA /* UserViewController.h */,
+				7C2F79891A85AC2F007F1CCA /* UserViewController.m */,
+				7C662F681A7335350074FEE9 /* ViewController.h */,
+				7C662F691A7335350074FEE9 /* ViewController.m */,
+				7CC7E53A1A8218FA001869DE /* ViewProfileViewController.h */,
+				7CC7E53B1A8218FA001869DE /* ViewProfileViewController.m */,
+				7CC7E52C1A818775001869DE /* WiiUPrefTableViewController.h */,
+				7CC7E52D1A818775001869DE /* WiiUPrefTableViewController.m */,
+				7CD9C26F1A80C2780038196C /* WiiUTableViewController.h */,
+				7CD9C2701A80C2780038196C /* WiiUTableViewController.m */,
+				7CC7E5261A818759001869DE /* Xbox360PrefTableViewController.h */,
+				7CC7E5271A818759001869DE /* Xbox360PrefTableViewController.m */,
+				7CD9C2691A80C2670038196C /* Xbox360TableViewController.h */,
+				7CD9C26A1A80C2670038196C /* Xbox360TableViewController.m */,
+				7CC7E5291A818766001869DE /* XboxOnePrefTableViewController.h */,
+				7CC7E52A1A818766001869DE /* XboxOnePrefTableViewController.m */,
+				7CD9C26C1A80C2700038196C /* XboxOneTableViewController.h */,
+				7CD9C26D1A80C2700038196C /* XboxOneTableViewController.m */,
 			);
 			path = "Team-Up";
 			sourceTree = "<group>";
@@ -2312,6 +2358,11 @@
 					7C662F5D1A7335350074FEE9 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 8CGU65GCR4;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					7C662F761A7335350074FEE9 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -2976,6 +3027,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2151A71AC5D38B00EA35F3 /* DownloadPictureViewController.m in Sources */,
 				7C507B281A845F9B0039B93E /* SettingsTableViewController.m in Sources */,
 				7CD9C2741A80C2930038196C /* 3DSTableViewController.m in Sources */,
 				7CD9C2801A81845F0038196C /* SportsPrefTableViewController.m in Sources */,
@@ -2984,9 +3036,13 @@
 				7C2F798D1A85D6BD007F1CCA /* CategoryGroupViewController.m in Sources */,
 				7C507B2E1A84A3600039B93E /* CreatedGroupViewController.m in Sources */,
 				7CC7E52B1A818766001869DE /* XboxOnePrefTableViewController.m in Sources */,
+				F11A204C1AC3E9A3007C0185 /* AdminPopupViewController.m in Sources */,
 				7CC7E5311A81877F001869DE /* 3DSPrefTableViewController.m in Sources */,
 				7CD9C26E1A80C2700038196C /* XboxOneTableViewController.m in Sources */,
+				1F4025C81ABD033700F81DF7 /* CategoryTableViewController.m in Sources */,
+				6B148F391AC7261A00E35931 /* ClosestGroupsViewController.m in Sources */,
 				7C662F6A1A7335350074FEE9 /* ViewController.m in Sources */,
+				6BA54B971AAFDB7D00B331AD /* TeamForYouViewController.m in Sources */,
 				7C418AE11A807B8800219F6A /* LoginViewController.m in Sources */,
 				7CD9C27A1A814FDB0038196C /* DeleteAccountViewController.m in Sources */,
 				7CC7E5361A81C281001869DE /* ProfileViewController.m in Sources */,
@@ -3003,12 +3059,15 @@
 				7CD9C26B1A80C2670038196C /* Xbox360TableViewController.m in Sources */,
 				7C3ABE0C1A7A26880069D53D /* NewUserViewController.m in Sources */,
 				7C69AF8E1A95AF62003CA3AC /* ChatGroupsTableViewController.m in Sources */,
+				F1D58EDC1ABFBCBF00F2EDEB /* MemberTableViewController.m in Sources */,
 				7C69AF911A95B3D0003CA3AC /* ChatViewController.m in Sources */,
+				1FEDC5CD1AC8A8A200DAC3A7 /* GroupMeetingsViewController.m in Sources */,
 				7C2F79871A85A428007F1CCA /* MyGroupViewController.m in Sources */,
 				7CD9C2771A80C6850038196C /* SportsTableViewController.m in Sources */,
 				7CC7E5251A81874F001869DE /* PS3PrefTableViewController.m in Sources */,
 				7CD9C2711A80C2780038196C /* WiiUTableViewController.m in Sources */,
 				7C507B2B1A847F2B0039B93E /* CreateGroupViewController.m in Sources */,
+				1FEDC5CE1AC8A8A200DAC3A7 /* ScheduleMeetingViewController.m in Sources */,
 				7C2F79931A8812BE007F1CCA /* EditGroupViewController.m in Sources */,
 				7CD9C2681A80C2540038196C /* PS4TableViewController.m in Sources */,
 				7CC7E5281A818759001869DE /* Xbox360PrefTableViewController.m in Sources */,
@@ -3134,6 +3193,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Team-Up/Team-Up.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3141,6 +3201,8 @@
 					"$(PROJECT_DIR)/Team-Up/parse-library-1.6.2",
 					"$(PROJECT_DIR)/Team-Up",
 					"$(PROJECT_DIR)",
+					"/Users/yiyangpan/Downloads/parse-library-1",
+					"/Users/Travis/Downloads/parse-library-1-2",
 				);
 				INFOPLIST_FILE = "Team-Up/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3159,6 +3221,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Team-Up/Team-Up.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3166,6 +3229,8 @@
 					"$(PROJECT_DIR)/Team-Up/parse-library-1.6.2",
 					"$(PROJECT_DIR)/Team-Up",
 					"$(PROJECT_DIR)",
+					"/Users/yiyangpan/Downloads/parse-library-1",
+					"/Users/Travis/Downloads/parse-library-1-2",
 				);
 				INFOPLIST_FILE = "Team-Up/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

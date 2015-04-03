@@ -8,14 +8,32 @@
 
 #import "CreateGroupViewController.h"
 #import <Parse/Parse.h>
-
+#import "AppDelegate.h"
 @interface CreateGroupViewController ()
 
 @end
 
 @implementation CreateGroupViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.txt.enabled = NO;
+    
+    //Initialize current location to some default geopoint value
+    self.currentLocation = [[PFGeoPoint alloc] init];
+    
+    
+    // get user's current location
+    [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
+        if (!error) {
+            // do something with the new geoPoint
+            // User's location
+            self.currentLocation = geoPoint;
+            
+        }
+    }];
+    
     PFQuery *groups = [PFQuery queryWithClassName:@"Group"];
     [groups orderByDescending: @"createdAt"];
     [groups getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
@@ -39,6 +57,7 @@
     [self.view addGestureRecognizer:tap];
     // Do any additional setup after loading the view.
 }
+
 
 -(void) dismissKeyboard {
     [self.picker resignFirstResponder];
@@ -80,6 +99,14 @@
     tView.text=[self.array objectAtIndex:row];
     return tView;
 }
+- (IBAction)privacySetting:(id)sender {
+    if(self.privacy.selectedSegmentIndex == 0){
+        NSLog(@"YES");
+    }
+    else if(self.privacy.selectedSegmentIndex == 1){
+        NSLog(@"NO");
+    }
+}
 
 -(IBAction)submit:(id)sender {
     PFUser *currentUser = [PFUser currentUser];
@@ -92,8 +119,26 @@
     group[@"category"] = categoryId;
     group[@"categoryName"] = categoryname;
     group[@"description"] = self.des.text;
+    
+    if(self.privacy.selectedSegmentIndex == 0){
+        group[@"isPublic"] = [NSNumber numberWithBool:YES];
+    }
+    else if(self.privacy.selectedSegmentIndex == 1){
+        group[@"isPublic"] = [NSNumber numberWithBool:NO];
+    }
+    else{
+        group[@"isPublic"] = [NSNumber numberWithBool:YES];
+    }
+
+    group[@"geoPoint"] = self.currentLocation;
+	
     self.one = [NSNumber numberWithInt:1];
     group[@"groupId"] = [NSNumber numberWithFloat:([self.one intValue] + [self.counter intValue])];
+    
+    AppDelegate *ad=(AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [ad.myGlobalArray setObject:group atIndexedSubscript:0];
+    
+    
     PFObject *member = [PFObject objectWithClassName:@"Member"];
     member[@"username"] = currentUser.username;
     member[@"groupId"] = [NSNumber numberWithFloat:([self.one intValue] + [self.counter intValue])];

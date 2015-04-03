@@ -20,21 +20,31 @@
     // Do any additional setup after loading the view.
     PFUser *currentUser = [PFUser currentUser];
     AppDelegate *ad=(AppDelegate*)[[UIApplication sharedApplication] delegate];
+    ad.currentGroupImage = [UIImage imageWithData:[[ad.myGlobalArray objectAtIndex:0][@"image"] getData]];
+    if(ad.currentGroupImage == nil)
+        ad.currentGroupImage = [UIImage imageNamed:[[NSBundle mainBundle] pathForResource:@"QM" ofType:@".jpeg"]];
+    [self.imgGroup setImage:ad.currentGroupImage];
     NSString *name = [ad.myGlobalArray objectAtIndex:0][@"groupname"];
     self.navbar.title = name;
     self.gn.text = name;
     self.an.text = [ad.myGlobalArray objectAtIndex:0][@"admin"];
     self.cat.text = [ad.myGlobalArray objectAtIndex:0][@"categoryName"];
     self.des.text = [ad.myGlobalArray objectAtIndex:0][@"description"];
+    self.meetButton.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    self.meetButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+    [self.meetButton setTitle:@"Meetings" forState:UIControlStateNormal];
     if([currentUser.username isEqualToString:[ad.myGlobalArray objectAtIndex:0][@"admin"]]) {
             [self.editButton addTarget:self
                                 action:@selector(edit)
                         forControlEvents:UIControlEventTouchUpInside];
             [self.editButton setTitle:@"Edit" forState:UIControlStateNormal];
+            [self.membersButton setTitle:@"Member" forState:UIControlStateNormal];
             NSLog(@"I AM THE ADMIN");
     }
     else {
         [self.editButton setTitle:@"" forState:UIControlStateNormal];
+        [self.membersButton setHidden:YES];
+
         NSLog(@"NOT ADMIN");
     }
     PFQuery *member = [PFQuery queryWithClassName:@"Member"];
@@ -95,7 +105,27 @@
     [mem whereKey:@"username" equalTo:currentUser.username];
     [mem whereKey:@"groupId" equalTo:[ad.myGlobalArray objectAtIndex:0][@"groupId"]];
     [mem findObjectsInBackgroundWithBlock:^(NSArray *results, NSError *error) {
-        [[results objectAtIndex:0] deleteInBackground];
+        [[results objectAtIndex:0] delete];
+        PFQuery *findadmin = [PFQuery queryWithClassName:@"Member"];
+        [findadmin whereKey:@"username" equalTo:[ad.myGlobalArray objectAtIndex:0][@"admin"]];
+        NSLog([ad.myGlobalArray objectAtIndex:0][@"admin"]);
+        [findadmin whereKey:@"groupId" equalTo:[ad.myGlobalArray objectAtIndex:0][@"groupId"]];
+        if([[findadmin findObjects] count] == 0) {  //If there is no longer an admin...
+            NSLog(@"ADMIN LEFT");
+            PFQuery *newadmin = [PFQuery queryWithClassName:@"Member"];
+            [newadmin whereKey:@"groupId" equalTo:[ad.myGlobalArray objectAtIndex:0][@"groupId"]];
+            [newadmin orderByAscending:@"createdAt"];
+            [newadmin findObjectsInBackgroundWithBlock:^(NSArray *results, NSError *error) {
+                if([results count] == 0) {
+                    //Delete group
+                }
+                else {
+                    //Make user @ object 0 admin
+                    [ad.myGlobalArray objectAtIndex:0][@"admin"] = [results objectAtIndex:0][@"username"];
+                    [[ad.myGlobalArray objectAtIndex:0] saveInBackground];
+                }
+            }];
+        }
     }];
     self.navbar.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Join" style:UIBarButtonItemStylePlain target:self action:@selector(join)];
 }

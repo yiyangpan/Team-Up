@@ -14,13 +14,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.txt.enabled = NO;
     UITapGestureRecognizer * tap= [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
     // Do any additional setup after loading the view.
     AppDelegate *ad=(AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    //Load group image
+    ad.currentGroupImage = [UIImage imageWithData:[[ad.myGlobalArray objectAtIndex:0][@"image"] getData]];
+    if(ad.currentGroupImage == nil)
+        ad.currentGroupImage = [UIImage imageNamed:[[NSBundle mainBundle] pathForResource:@"QM" ofType:@".jpeg"]];
+    [self.imgGroup setImage:ad.currentGroupImage];
+    
+    //Load group name and description
     self.gn.text = [ad.myGlobalArray objectAtIndex:0][@"groupname"];
     self.des.text = [ad.myGlobalArray objectAtIndex:0][@"description"];
+    NSLog(@"selected? %@",[ad.myGlobalArray objectAtIndex:0][@"isPublic"]);
+    if([[ad.myGlobalArray objectAtIndex:0][@"isPublic"] intValue] == 1){
+        self.privacy.selectedSegmentIndex = 0;
+    }
+    else{
+        self.privacy.selectedSegmentIndex = 1;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -48,6 +64,12 @@
         group[@"category"]= [ad.myGlobalArray objectAtIndex:0][@"category"];
         group[@"groupname"] = self.gn.text;
         group[@"description"] = self.des.text;
+        if(self.privacy.selectedSegmentIndex == 0){
+            group[@"isPublic"] = [NSNumber numberWithBool:YES];
+        }
+        else if(self.privacy.selectedSegmentIndex == 1){
+            group[@"isPublic"] = [NSNumber numberWithBool:NO];
+        }
         PFQuery *deleteGroup = [PFQuery queryWithClassName:@"Group"];
         [deleteGroup whereKey:@"groupId" equalTo:[ad.myGlobalArray objectAtIndex:0][@"groupId"]];
         [deleteGroup findObjectsInBackgroundWithBlock:^(NSArray *results, NSError *error) {

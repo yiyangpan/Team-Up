@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <Parse/PFGeoPoint.h>
 
 @interface CreateGroupViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -18,5 +19,11 @@
 @property (strong,nonatomic) NSArray *categoryIds;
 @property (weak,nonatomic) NSNumber *counter;
 @property (strong,nonatomic) NSNumber *one;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *privacy;
+@property (weak,nonatomic) NSNumber *picy;
+@property(nonatomic) NSInteger selectedSegmentIndex;
+@property (weak, nonatomic) IBOutlet UITextField *txt;
+
 @property NSInteger num;
+@property PFGeoPoint* currentLocation;
 @end
